@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "storage_account_connection_string",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "Office365Credentials": "email:password"
+  }
+}
