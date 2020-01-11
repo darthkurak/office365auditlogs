@@ -36,7 +36,7 @@ namespace AzFunction
 
         private static Lazy<BlobManager> BlobManager = new Lazy<BlobManager>(() =>
         {
-            var connectionString = System.Environment.GetEnvironmentVariable("AzureWebJobsStorage", EnvironmentVariableTarget.Process);
+            var connectionString = System.Environment.GetEnvironmentVariable("AuditLogsStorage", EnvironmentVariableTarget.Process);
             return new BlobManager(new BlobProvider(connectionString));
         });
 
